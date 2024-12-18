@@ -47,33 +47,11 @@ const HeroSection = () => {
 					<ThreeJsLanding/>
 					
 				</div>
-				{/* <div className="container">
-					<h1 className="title onovo-text-white">
-						<span data-splitting data-onovo-scroll>
-                            <span dangerouslySetInnerHTML={{__html: Data.title.text}} />
-                            <span className="onovo-sep word">
-								<i className="sep-img" style={{"backgroundImage": "url("+Data.title.icon+")"}} />
-							</span>
-						</span>
+				<div className="container align-center">
+					<h1 className="gap-top-40 onovo-text-white noselect">
+						Hello hello hello
 					</h1>
-					<div className="text">
-						<div className="subtitle onovo-text-white">
-							<div data-splitting data-onovo-scroll>
-                                <div dangerouslySetInnerHTML={{__html: Data.subtitle}} />
-                            </div>
-						</div>
-					</div>
-					<a href="#" className={mute ? "onovo-play-btn active" : "onovo-play-btn"} onClick={(e) => clickedMuteHeroVideo(e) }>
-						<span className="play-circles" />
-						<span className="play-lines">
-						
-							<span />
-							<span />
-							<span />
-							<span />
-						</span>
-					</a>
-				</div> */}
+				</div>
 			</section>
         </>
     );

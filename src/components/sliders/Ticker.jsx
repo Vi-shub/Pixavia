@@ -19,9 +19,9 @@ const TickerSlider = () => {
                     {Data.items.map((item, key) => (
                     <SwiperSlide key={`ticker-slide-${key}`} className="swiper-slide">
                         <h5 className="title onovo-text-white">
-                            <Link href={item.link}>
+                            
                                 <span>{item.label}</span>
-                            </Link>
+                            
                         </h5>
                     </SwiperSlide>
                     ))}

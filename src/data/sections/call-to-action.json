@@ -6,9 +6,9 @@
     "bg_image2": "/images/cta-circle2.png",
     "social": [
         {
-            "link": "https://facebook.com/",
-            "icon": "fab fa-facebook-f",
-            "title": "Facebook"
+            "link": "https://behance.com/",
+            "icon": "fab fa-behance",
+            "title": "Behance"
         },
         {
             "link": "https://instagram.com/",
@@ -16,9 +16,9 @@
             "title": "Instagram"
         },
         {
-            "link": "https://twitter.com/",
-            "icon": "fab fa-twitter",
-            "title": "Twitter"
+            "link": "https://youtube.com/",
+            "icon": "fab fa-youtube",
+            "title": "Youtube"
         },
         {
             "link": "https://linkedin.com/",

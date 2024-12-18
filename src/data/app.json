@@ -1,6 +1,6 @@
 {
     "settings": {
-        "siteName": "Onovo",
+        "siteName": "PIXAVIA",
         "preloader": true,
         "formspreeURL": "https://formspree.io/f/your_api_key",
         "portfolio": {
@@ -212,13 +212,18 @@
                 "alt": "image"
             }
         ],
-        "copy": "© 2023 ONOVO by <a href='https://bslthemes.com' target='blank' class='onovo-lnk lnk--white'>bslthemes Team</a>. All rights reserved."
+        "copy": "© 2025 PIXAVIA developed by <a href='' target='blank' class='onovo-lnk lnk--white'>Shubham Vishwakarma</a>. All rights reserved."
     },
     "social": [
         {
-            "link": "https://facebook.com",
-            "icon": "fab fa-facebook",
-            "title": "Facebook"
+            "link": "https://behance.com",
+            "icon": "fab fa-behance",
+            "title": "Behance"
+        },
+        {
+            "link": "https://youtube.com",
+            "icon": "fab fa-youtube",
+            "title": "Youtube"
         },
         {
             "link": "https://twitter.com",

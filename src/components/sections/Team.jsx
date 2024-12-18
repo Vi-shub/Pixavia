@@ -35,7 +35,7 @@ const TeamSection = ( { team } ) => {
 											<span data-splitting data-onovo-scroll>{item.role}</span>
 										</div>
 										<div className="onovo-social-1">
-											<ul>
+											{/* <ul>
                                                 {item.social.map((link, link_key) => (
 												<li key={`team-item-${key}-social-link-${link_key}`}>
 													<a className="onovo-social-link onovo-hover-2" href={link.link} title={link.title} target="_blank">
@@ -43,7 +43,7 @@ const TeamSection = ( { team } ) => {
 													</a>
 												</li>
 												))}
-											</ul>
+											</ul> */}
 										</div>
 									</div>
 									<div className="image">

@@ -5,7 +5,7 @@ const AboutSection = () => {
     return (
       <>
         {/* Onovo About */}
-        <section className="onovo-section gap-bottom-140">
+        <section className="onovo-section gap-bottom-140 gap-top-70">
           <div className="container">
             <div className="row">
               <div className="col-xs-12 col-sm-12 col-md-12 col-lg-8">

@@ -19,7 +19,7 @@ const VideoSection = () => {
   return (
     <>
       	{/* Onovo Video */}
-		<section className="onovo-section">
+		<section className="onovo-section gap-bottom-140">
 			<div className="container">
 
 				{/* video */}

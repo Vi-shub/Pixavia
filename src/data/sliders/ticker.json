@@ -1,19 +1,27 @@
 {
     "items": [
         {
-            "label": "- Brand Strategy",
+            "label": "- Maya",
             "link": "/services/service-1"
         },
         {
-            "label": "- Creative Direction",
+            "label": "- Blender",
             "link": "/services/service-2"
         },
         {
-            "label": "- Native and Web Apps",
+            "label": "- Photoshop",
             "link": "/services/service-3"
         },
         {
-            "label": "- Machine Learning / AI",
+            "label": "- Illustrator",
+            "link": "/services/service-4"
+        },
+        {
+            "label": "- ZBrush",
+            "link": "/services/service-4"
+        },
+        {
+            "label": "- Unreal Engine",
             "link": "/services/service-4"
         }
     ]
