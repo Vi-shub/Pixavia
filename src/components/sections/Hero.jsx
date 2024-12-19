@@ -49,7 +49,7 @@ const HeroSection = () => {
 				</div>
 				<div className="container align-center">
 					<h1 className="gap-top-40 onovo-text-white noselect">
-						Hello hello hello
+						Provide tagline 
 					</h1>
 				</div>
 			</section>

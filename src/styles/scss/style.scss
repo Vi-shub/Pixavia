@@ -70,7 +70,11 @@ Version: 1.0
 	margin: 0;
 }
 
-
+.custom-col {
+	flex: 0 0 20%; /* Each column takes 20% width */
+	max-width: 20%; /* Set maximum width to 20% */
+  }
+  
 
 html,
 body {
@@ -5096,7 +5100,7 @@ ul.onovo-footer-menu li {
 	position: relative;
 	overflow: hidden;
 	border: 1px solid #3E3E3E;
-	height: 669px;
+	height: 550px;
 }
 
 .onovo-team-item .desc {
