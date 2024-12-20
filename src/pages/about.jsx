@@ -14,7 +14,6 @@ import PartnersSection from "@components/sections/Partners"
 import AwardsSection from "@components/sections/Awards"
 import Services4Section from "@components/sections/Services4"
 
-const HistorySlider = dynamic( () => import("@components/sliders/History"), { ssr: false } );
 const Testimonial2Slider = dynamic( () => import("@components/sliders/Testimonial2"), { ssr: false } );
 
 const About = (props) => {
@@ -152,7 +151,7 @@ const About = (props) => {
 
 		<AwardsSection />
 
-      	<HistorySlider />
+      
 
       	<Team2Section team={props.team} />
 

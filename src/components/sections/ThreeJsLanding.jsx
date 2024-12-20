@@ -133,7 +133,7 @@ class Environment {
     this.renderer = new THREE.WebGLRenderer({ antialias: true });
     this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     this.renderer.setSize(window.innerWidth, window.innerHeight);
-    this.renderer.outputEncoding = THREE.sRGBEncoding;
+    this.renderer.outputEncoding = THREE.SRGBColorSpace;
     this.container.appendChild(this.renderer.domElement);
   
     // Set canvas style
