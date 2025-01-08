@@ -26,8 +26,8 @@
     },
     "header": {
         "logo": {
-            "image": "/images/logo-black.png",
-            "image_white": "/images/logo-main.png",
+            "image": "/images/pixavia-logo-black.png",
+            "image_white": "/images/pixavia-logo.png",
             "alt": "logo"
         },
         "menu": [

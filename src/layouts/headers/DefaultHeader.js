@@ -70,11 +70,11 @@ const DefaultHeader = ({ darkHeader, cartButton }) => {
         className={darkHeader ? "onovo-header" : "onovo-header header--white"}
       >
         <div className="header--builder">
-          <div className="container">
-            <div className="row">
+          <div className="">
+            <div className="">
               <div className="col-4 col-xs-4 col-sm-4 col-md-4 col-lg-3 align-self-center">
                 {/* Logo */}
-                <div className="onovo-logo-image" style={{ maxWidth: "70px" }}>
+                <div className="onovo-logo-image" style={{ maxWidth: "60px" }}>
                   <Link href="/">
                     <img
                       src={appData.header.logo.image}
@@ -88,9 +88,9 @@ const DefaultHeader = ({ darkHeader, cartButton }) => {
                   </Link>
                 </div>
               </div>
-              <div className="col-4 col-xs-4 col-sm-4 col-md-4 col-lg-6 align-self-center align-center">
+              {/* <div className="col-4 col-xs-4 col-sm-4 col-md-4 col-lg-6 align-self-center align-center"> */}
                 {/* Menu Hamburger */}
-                <a
+                {/* <a
                   href="#"
                   className={
                     desktopMenu
@@ -128,10 +128,10 @@ const DefaultHeader = ({ darkHeader, cartButton }) => {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="col-4 col-xs-4 col-sm-4 col-md-4 col-lg-3 align-self-center align-right">
+              </div> */}
+              {/* <div className="col-4 col-xs-4 col-sm-4 col-md-4 col-lg-3 align-self-center align-right"> */}
                 {/* Button */}
-                <Link
+                {/* <Link
                   className="onovo-head-btn onovo-hover-btn"
                   href={appData.header.button.link}
                 >
@@ -144,7 +144,7 @@ const DefaultHeader = ({ darkHeader, cartButton }) => {
                     <span />
                   </i>
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

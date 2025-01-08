@@ -83,6 +83,12 @@ const ProjectsGrid = ({ projects, layout, cols, sideFilter, masonry, galleryMode
       {/* Onovo Projects */}
       <section className="onovo-section gap-top-140">
         <div className="container">
+        <div className="onovo-heading align-center gap-bottom-40">
+        
+        <h1 className="onovo-title-1">
+          <span dangerouslySetInnerHTML={{ __html: "Projects" }} />
+        </h1>
+      </div>
 
           {/* Projects Grid */}
           <div className={sideFilter ? "onovo-portfolio portfolio--side" : "onovo-portfolio"}>

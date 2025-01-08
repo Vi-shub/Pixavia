@@ -15,6 +15,8 @@ import ShowcaseSection from "@components/sections/Showcase";
 import TeamSection from "@components/sections/Team";
 import VideoSection from "@components/sections/Video";
 import CallToActionSection from "@components/sections/CallToAction";
+import ProjectData from "../components/sections/ProjectData";
+
 
 const HeroSection = dynamic( () => import("@components/sections/Hero"), { ssr: false } );
 const TickerSlider = dynamic( () => import("@components/sliders/Ticker"), { ssr: false } );
@@ -30,11 +32,9 @@ const Home1 = (props) => {
       <>
         <HeroSection />
         <AboutSection />
+        <ProjectData/>
         <TickerSlider />
-        <ShowcaseSection projects={props.projects} />
-        <TeamSection team={props.team} />
         <VideoSection />
-        <CallToActionSection />
        
       </>
     </Layouts>

@@ -48,9 +48,9 @@ const HeroSection = () => {
 					
 				</div>
 				<div className="container align-center">
-					<h1 className="gap-top-40 onovo-text-white noselect">
-						Provide tagline 
-					</h1>
+					<h4 className="gap-top-20 onovo-text-white-custom noselect">
+					  Pixel Perfect Everytime
+					</h4>
 				</div>
 			</section>
         </>
