@@ -7,17 +7,7 @@ const HistorySlider = () => {
       {/* Onovo History */}
       <section id="about" className="onovo-section onovo-section-bg gap-top-140 gap-bottom-140">
         <div className="container">
-          <div className="row">
-            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-9">
-              {/* Heading */}
-              <div className="onovo-heading gap-bottom-80">
-                <h2 className="onovo-title-2">
-                  <span dangerouslySetInnerHTML={{ __html: Data.title }} />
-                </h2>
-              </div>
-            </div>
-          </div>
-
+          
           {/* History Items */}
           <div className="onovo-history-items">
             <div className="onovo-history-item gap-bottom-40">
@@ -28,16 +18,13 @@ const HistorySlider = () => {
               />
               <div className="desc">
                 <div className="subtitle custom-h onovo-text-white">
-                  <div>What we do</div>
+                  <div>Who We Are</div>
                 </div>
-                <h5 className="title">
-                  <span>With a Passion for Creation Brands</span>
-                </h5>
+                
                 <div className="text">
                   <p>
-                    The creative agency studio was founded in 1998 by a group of
-                    graphic designers with a passion for creating bold,
-                    innovative designs that push boundaries
+                  Pixavia, we are a cutting-edge design studio passionate about transforming ideas into visual masterpieces. Specializing in video editing, graphic design, branding, 3D modeling, and motion graphics, we bring creativity and precision to every project. Our team combines artistic innovation with a seamless workflow, ensuring that each piece resonates with quality, originality, and purpose. Whether it's crafting a brand identity or creating dynamic visuals, Pixavia is your partner in design excellence.  
+
                   </p>
                 </div>
               </div>
@@ -48,14 +35,10 @@ const HistorySlider = () => {
                 <div className="subtitle custom-h onovo-text-white">
                   <div>What we do</div>
                 </div>
-                <h5 className="title">
-                  <span>With a Passion for Creation Brands</span>
-                </h5>
+               
                 <div className="text">
                   <p>
-                    The creative agency studio was founded in 1998 by a group of
-                    graphic designers with a passion for creating bold,
-                    innovative designs that push boundaries
+                  Pixavia offers a comprehensive suite of creative services, including video editing, graphic design, branding, 3D visuals, and motion graphics. We collaborate closely with clients to understand their vision and deliver bespoke solutions that captivate audiences and elevate brands. From compelling animations to striking designs, our work is defined by a meticulous process and a commitment to excellence. At Pixavia, we turn your ideas into engaging, high-quality visuals that leave a lasting impact.
                   </p>
                 </div>
               </div>

@@ -16,100 +16,72 @@ const DefaultFooter = () => {
         <div className="footer--default">
           <div className="container">
             <div className="row">
-            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-3">
-  {/* Description */}
-  <div className="onovo-text onovo-text-white">
-    <ul className="footer-links" style={{ fontSize: "1.6rem", margin: 0 }}>
-      <li>
-        <a
-          href="#hero"
-          className="onovo-lnk lnk--white"
-          
-        >
-          Home
-        </a>
-      </li>
-      <li>
-        <a
-          href="#about"
-          className="onovo-lnk lnk--white"
-          
-        >
-          About Us
-        </a>
-      </li>
-      <li>
-        <a
-          href="#project"
-          className="onovo-lnk lnk--white"
-          
-        >
-          Projects
-        </a>
-      </li>
-      <li>
-        <a
-          href="/contact"
-          className="onovo-lnk lnk--white"
-          
-        >
-        Contact Us
-        </a>
-      </li>
-      <li>
-        <a
-          href="/terms"
-          className="onovo-lnk lnk--white"
-         
-        >
-          Terms of Services
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-
-              <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 offset-lg-1">
+              <div className="col-xs-12 col-sm-12 col-md-6 col-lg-3">
                 {/* Description */}
                 <div className="onovo-text onovo-text-white">
-                  <h5>Get in Touch</h5>
-                  <p style={{ opacity: "0.6" }}>
-                    provide content <br />
-                    provide content{" "}
-                  </p>
-                  <p style={{ opacity: "0.6" }}>
-                    <a
-                      href="tel:+10204302973"
-                      className="onovo-lnk lnk--white"
-                      target="_blank"
-                    >
-                      + 1 (020) provide content
-                    </a>
-                    <br />
-                    <a
-                      href="mailto:username@domain.com"
-                      className="onovo-lnk lnk--white"
-                      target="_blank"
-                    >
-                      usprovide content
-                    </a>
-                  </p>
+                  <ul
+                    className="footer-links"
+                    style={{ fontSize: "1.6rem", margin: 0 }}
+                  >
+                    <li>
+                      <a href="#hero" className="onovo-lnk lnk--white">
+                        Home
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#about" className="onovo-lnk lnk--white">
+                        About Us
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#project" className="onovo-lnk lnk--white">
+                        Projects
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/contact" className="onovo-lnk lnk--white">
+                        Contact Us
+                      </a>
+                    </li>
+                    <li>
+                      <a href="/terms" className="onovo-lnk lnk--white">
+                        Terms of Services
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
+
+              <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 offset-lg-1">
+
+              <img
+                      src="/images/form-bg.png"
+                      alt="Houston Office"
+                      style={{
+                        width: "250px",
+                        height: "auto",
+                        marginBottom: "10px",
+                      }}
+                    />
+              </div>
               <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                <div className="row">
-                  {appData.footer.gallery.map((item, key) => (
-                    <div
-                      key={`fgallery-item-${key}`}
-                      className="col-4 col-xs-6 col-sm-6 col-md-4 col-lg-4"
-                    >
-                      <figure className="gallery-item">
-                        <a href={item.image} title={item.title}>
-                          <img src={item.image} alt={item.alt} />
-                        </a>
-                      </figure>
-                    </div>
-                  ))}
+                <div className="row gap-top-140">
+                  <div className="onovo-social-1 onovo-social-active">
+                    <ul>
+                      {appData.social.map((item, key) => (
+                        <li key={`fsocial-item-${key}`}>
+                          <a
+                            className="onovo-social-link onovo-hover-2"
+                            href={item.link}
+                            title={item.title}
+                            target="_blank"
+                          >
+                            <i className={item.icon}></i>
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -127,22 +99,6 @@ const DefaultFooter = () => {
               </div>
               <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 align-right">
                 {/* Social */}
-                <div className="onovo-social-1 onovo-social-active">
-                  <ul>
-                    {appData.social.map((item, key) => (
-                      <li key={`fsocial-item-${key}`}>
-                        <a
-                          className="onovo-social-link onovo-hover-2"
-                          href={item.link}
-                          title={item.title}
-                          target="_blank"
-                        >
-                          <i className={item.icon}></i>
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
               </div>
             </div>
           </div>
