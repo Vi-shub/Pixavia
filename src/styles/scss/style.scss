@@ -95,8 +95,11 @@ Version: 1.0
 	flex: 0 0 20%; /* Each column takes 20% width */
 	max-width: 20%; /* Set maximum width to 20% */
   }
-  
 
+  html{
+	scroll-behavior: smooth;
+  }
+ 
 html,
 body {
 	margin: 0;

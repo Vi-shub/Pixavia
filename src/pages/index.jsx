@@ -36,7 +36,6 @@ const Home1 = (props) => {
         <HeroSection />
         <HistorySlider />
         <ProjectData />
-        <TickerSlider />
         <VideoSection />
       </>
     </Layouts>

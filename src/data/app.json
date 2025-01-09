@@ -48,8 +48,11 @@
             
             {
                 "label": "Contact Us",
-                "link": "/contact",
-                "children": 0
+                "link": "/contact"
+            },
+            {
+                "label": "Terms of Services",
+                "link": "/terms"
             }
         ],
         "button": {

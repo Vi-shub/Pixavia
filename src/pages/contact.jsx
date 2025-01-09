@@ -1,6 +1,3 @@
-import PageBanner from "@components/PageBanner";
-import Layouts from "@layouts/Layouts";
-import Accordion from "react-bootstrap/Accordion";
 import appData from "@data/app.json";
 import { Formik } from "formik";
 import { useState } from "react";
@@ -222,16 +219,16 @@ const Contact = () => {
                       </ul>
                     </div>
                   </li>
-                  <li>
-                    <h5>Houston</h5>
-                    <div>
-                      2001 N. Clybourn Avenue Suite 202, <br />
-                      Block D, IL 60614
-                    </div>
-                  </li>
-                  <li>
-                    <h5>Los Angeles</h5>
-                    <div>2001 N. Clybourn Avenue Suite 202</div>
+                  <li className="align-center">
+                    <img
+                      src="/images/form-bg.png"
+                      alt="Houston Office"
+                      style={{
+                        width: "300px",
+                        height: "auto",
+                        marginBottom: "10px",
+                      }}
+                    />
                   </li>
                 </ul>
               </div>

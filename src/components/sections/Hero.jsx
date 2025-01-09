@@ -41,7 +41,7 @@ const HeroSection = () => {
     return (
         <>
             {/* Onovo Hero */}
-			<section className="onovo-section onovo-hero">
+			<section id="hero" className="onovo-section onovo-hero">
 				<div className="image">
 
 					<ThreeJsLanding/>

@@ -16,26 +16,59 @@ const DefaultFooter = () => {
         <div className="footer--default">
           <div className="container">
             <div className="row">
-              <div className="col-xs-12 col-sm-12 col-md-6 col-lg-3">
-                {/* Description */}
-                <div className="onovo-text onovo-text-white">
-                <ul className="footer-links"  style={{fontSize:"1.6rem",margin:0}}>
-                          {appData.header.menu.map((item, key) => (
-                            <li
-                              key={`header-nav-item-${key}`}
-                              className={item.classes}
-                            >
-                              <Link
-                                className="onovo-lnk lnk--white"
-                                href={item.link}
-                              >
-                                {item.label}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                </div>
-              </div>
+            <div className="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+  {/* Description */}
+  <div className="onovo-text onovo-text-white">
+    <ul className="footer-links" style={{ fontSize: "1.6rem", margin: 0 }}>
+      <li>
+        <a
+          href="#hero"
+          className="onovo-lnk lnk--white"
+          
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          href="#about"
+          className="onovo-lnk lnk--white"
+          
+        >
+          About Us
+        </a>
+      </li>
+      <li>
+        <a
+          href="#project"
+          className="onovo-lnk lnk--white"
+          
+        >
+          Projects
+        </a>
+      </li>
+      <li>
+        <a
+          href="/contact"
+          className="onovo-lnk lnk--white"
+          
+        >
+        Contact Us
+        </a>
+      </li>
+      <li>
+        <a
+          href="/terms"
+          className="onovo-lnk lnk--white"
+         
+        >
+          Terms of Services
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
               <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 offset-lg-1">
                 {/* Description */}
                 <div className="onovo-text onovo-text-white">

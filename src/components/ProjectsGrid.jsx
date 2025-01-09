@@ -81,7 +81,7 @@ const ProjectsGrid = ({ projects, layout, cols, sideFilter, masonry, galleryMode
   return (
     <>
       {/* Onovo Projects */}
-      <section className="onovo-section gap-top-140">
+      <section id="project" className="onovo-section gap-top-140 gap-bottom-140">
         <div className="container">
         <div className="onovo-heading align-center gap-bottom-40">
         
