@@ -12,7 +12,7 @@ class MyDocument extends Document {
 
           {/* favicon begin */}
           <link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon" />
-          <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon" />
+          <link rel="icon" href="/images/pixavia-logo.png" type="image/x-icon" />
           {/* favicon */}
 
           {/* Fonts */}

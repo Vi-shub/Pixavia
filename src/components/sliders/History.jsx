@@ -13,7 +13,7 @@ const HistorySlider = () => {
             <div className="onovo-history-item gap-bottom-40">
               <div
                 className="image"
-                style={{ backgroundImage: `url("/images/post1-1000x667.jpg")` }}
+                style={{ backgroundImage: `url("/images/intro1.png")` }}
                 data-onovo-overlay
               />
               <div className="desc">
@@ -44,7 +44,7 @@ const HistorySlider = () => {
               </div>
               <div
                 className="image"
-                style={{ backgroundImage: `url("/images/post1-1000x667.jpg")` }}
+                style={{ backgroundImage: `url("/images/intro2.png")` }}
                 data-onovo-overlay
               />
             </div>

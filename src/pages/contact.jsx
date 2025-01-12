@@ -100,6 +100,7 @@ const Contact = () => {
                       onSubmit={handleSubmit}
                       id="contactForm"
                       action="https://formspree.io/f/mvggdpwe"
+                      //action="https://formsubmit.co/pixavia.studio@gmail.com"
                       className="cform"
                       method="post"
                     >

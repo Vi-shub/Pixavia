@@ -97,9 +97,7 @@ const DefaultFooter = () => {
                   />
                 </div>
               </div>
-              <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 align-right">
-                {/* Social */}
-              </div>
+             
             </div>
           </div>
         </div>

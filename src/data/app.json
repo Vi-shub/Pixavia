@@ -105,22 +105,22 @@
     },
     "social": [
         {
-            "link": "https://behance.com",
+            "link": "https://www.behance.net/pixaviastudio",
             "icon": "fab fa-behance",
             "title": "Behance"
         },
         {
-            "link": "https://youtube.com",
+            "link": "https://youtube.com/@pixaviadesignstudio?si=Jhy9JIqCU8zVLxaP",
             "icon": "fab fa-youtube",
             "title": "Youtube"
         },
         {
-            "link": "https://twitter.com",
-            "icon": "fab fa-twitter",
+            "link": "https://www.instagram.com/pixavia._?igsh=MTltaXhwaDFxbjJ2cA==",
+            "icon": "fab fa-instagram",
             "title": "Twitter"
         },
         {
-            "link": "https://linkedin.com",
+            "link": "https://www.linkedin.com/in/pixavia-studio-a26015346?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
             "icon": "fab fa-linkedin",
             "title": "Linkedin"
         }
