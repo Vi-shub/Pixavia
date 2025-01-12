@@ -5,17 +5,17 @@ const HistorySlider = () => {
   return (
     <>
       {/* Onovo History */}
-      <section id="about" className="onovo-section onovo-section-bg gap-top-140 gap-bottom-140">
+      <section id="about" className="onovo-section onovo-section-bg gap-top-110 gap-bottom-140">
         <div className="container">
           
           {/* History Items */}
           <div className="onovo-history-items">
             <div className="onovo-history-item gap-bottom-40">
               <div
-                className="image"
-                style={{ backgroundImage: `url("/images/intro1.png")` }}
-                data-onovo-overlay
-              />
+                className="image">
+                  <img src="/images/intro1.jpg" alt="intro1" />
+                </div>
+
               <div className="desc">
                 <div className="subtitle custom-h onovo-text-white">
                   <div>Who We Are</div>
@@ -29,7 +29,7 @@ const HistorySlider = () => {
                 </div>
               </div>
             </div>
-            <div className="onovo-history-item gap-bottom-40">
+            <div className="onovo-history-item gap-bottom-40 gap-top-80">
              
               <div className="desc">
                 <div className="subtitle custom-h onovo-text-white">
@@ -43,10 +43,10 @@ const HistorySlider = () => {
                 </div>
               </div>
               <div
-                className="image"
-                style={{ backgroundImage: `url("/images/intro2.png")` }}
-                data-onovo-overlay
-              />
+                className="image">
+                <img src="/images/intro2.jpg" alt="intro2" />
+              
+            </div>
             </div>
           </div>
         </div>
