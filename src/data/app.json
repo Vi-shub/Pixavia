@@ -6,20 +6,20 @@
         "portfolio": {
             "categories": [
                 {
-                    "label": "Marketing",
-                    "slug": "marketing"
+                    "label": "Graphic designing",
+                    "slug": "Graphic designing"
                 },
                 {
-                    "label": "Interactive",
-                    "slug": "interactive"
+                    "label": "3d/2d designing",
+                    "slug": "3d/2d designing"
                 },
                 {
-                    "label": "Design",
-                    "slug": "design"
+                    "label": "Motion graphics",
+                    "slug": "Motion graphics"
                 },
                 {
-                    "label": "Branding",
-                    "slug": "branding"
+                    "label": "Video editing",
+                    "slug": "Video editing"
                 }
             ]
         }

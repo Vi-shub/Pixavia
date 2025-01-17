@@ -12,11 +12,19 @@ const DefaultFooter = () => {
   return (
     <>
       {/* Footer */}
-      <footer className="onovo-footer footer--dark">
+      <footer
+        className="onovo-footer footer--dark"
+        style={{
+          backgroundImage: "url('/images/footerbg.jpg')",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+        }}
+      >
         <div className="footer--default">
           <div className="container">
             <div className="row">
-              <div className="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+              <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 {/* Description */}
                 <div className="onovo-text onovo-text-white">
                   <ul
@@ -52,20 +60,9 @@ const DefaultFooter = () => {
                 </div>
               </div>
 
-              <div className="col-xs-12 col-sm-12 col-md-6 col-lg-4 offset-lg-1">
-
-              <img
-                      src="/images/form-bg.png"
-                      alt="Houston Office"
-                      style={{
-                        width: "250px",
-                        height: "auto",
-                        marginBottom: "10px",
-                      }}
-                    />
-              </div>
-              <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4">
-                <div className="row gap-top-140">
+              
+              <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6 ">
+                <div className="row custom-mrg gap-top-140">
                   <div className="onovo-social-1 onovo-social-active">
                     <ul>
                       {appData.social.map((item, key) => (
@@ -97,7 +94,6 @@ const DefaultFooter = () => {
                   />
                 </div>
               </div>
-             
             </div>
           </div>
         </div>
