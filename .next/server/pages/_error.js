@@ -109,14 +109,14 @@ module.exports = require("react/jsx-dev-runtime");
 
 /***/ }),
 
-/***/ "swiper/element/bundle":
-/*!****************************************!*\
-  !*** external "swiper/element/bundle" ***!
-  \****************************************/
+/***/ "react/jsx-runtime":
+/*!************************************!*\
+  !*** external "react/jsx-runtime" ***!
+  \************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = import("swiper/element/bundle");;
+module.exports = require("react/jsx-runtime");
 
 /***/ }),
 
@@ -131,6 +131,17 @@ module.exports = require("path");
 
 /***/ }),
 
+/***/ "swiper/element/bundle":
+/*!****************************************!*\
+  !*** external "swiper/element/bundle" ***!
+  \****************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = import("swiper/element/bundle");;
+
+/***/ }),
+
 /***/ "./src/data/app.json":
 /*!***************************!*\
   !*** ./src/data/app.json ***!
@@ -138,7 +149,7 @@ module.exports = require("path");
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"settings":{"siteName":"PIXAVIA","preloader":true,"formspreeURL":"https://formspree.io/f/your_api_key","portfolio":{"categories":[{"label":"Graphic designing","slug":"Graphic designing"},{"label":"3d/2d designing","slug":"3d/2d designing"},{"label":"Motion graphics","slug":"motion-graphics"},{"label":"Video editing","slug":"Video editing"}]}},"header":{"logo":{"image":"/images/pixavia-logo-black.png","image_white":"/images/pixavia-logo.png","alt":"logo"},"menu":[{"label":"Home","link":"/"},{"label":"About Us","link":"/about"},{"label":"Projects","link":"/projects"},{"label":"Contact Us","link":"/contact"},{"label":"Terms of Services","link":"/terms"}],"button":{"label":"Projects","link":"/projects"},"button2":{"label":"Start a Project","link":"/contact"}},"footer":{"logo":{"image":"/images/logo-black.png","alt":"logo"},"gallery":[{"image":"/images/post5-1024x683.jpg","title":"image","alt":"image"},{"image":"/images/post4-1024x683.jpg","title":"image","alt":"image"},{"image":"/images/post3-1024x683.jpg","title":"image","alt":"image"},{"image":"/images/post4-1024x683.jpg","title":"image","alt":"image"},{"image":"/images/post1-1024x683.jpg","title":"image","alt":"image"},{"image":"/images/post6-1024x683.jpg","title":"image","alt":"image"}],"copy":"© 2025 PIXAVIA developed by <a href=\'https://www.instagram.com/shubhxm_3121/\' target=\'blank\' class=\'onovo-lnk lnk--white\'>Shubham Vishwakarma</a>. All rights reserved."},"social":[{"link":"https://www.behance.net/pixaviastudio","icon":"fab fa-behance","title":"Behance"},{"link":"https://youtube.com/@pixaviadesignstudio?si=Jhy9JIqCU8zVLxaP","icon":"fab fa-youtube","title":"Youtube"},{"link":"https://www.instagram.com/pixavia._?igsh=MTltaXhwaDFxbjJ2cA==","icon":"fab fa-instagram","title":"Twitter"},{"link":"https://www.linkedin.com/in/pixavia-studio-a26015346?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app","icon":"fab fa-linkedin","title":"Linkedin"}]}');
+module.exports = /*#__PURE__*/JSON.parse('{"settings":{"siteName":"PIXAVIA","preloader":true,"formspreeURL":"https://formspree.io/f/your_api_key","portfolio":{"categories":[{"label":"Graphic designing","slug":"Graphic designing"},{"label":"3d/2d designing","slug":"3d/2d designing"},{"label":"Motion graphics","slug":"motion-graphics"},{"label":"Video editing","slug":"Video editing"}]}},"header":{"logo":{"image":"/images/pixavia-logo-black.png","image_white":"/images/pixavia-logo.png","alt":"logo"},"menu":[{"label":"Home","link":"/"},{"label":"About Us","link":"/about"},{"label":"Projects","link":"/projects"},{"label":"Contact Us","link":"/contact"},{"label":"Terms of Services","link":"/terms"}],"button":{"label":"Projects","link":"/projects"},"button2":{"label":"Start a Project","link":"/contact"}},"footer":{"logo":{"image":"/images/logo-black.png","alt":"logo"},"gallery":[{"image":"/images/post5-1024x683.jpg","title":"image","alt":"image"},{"image":"/images/post4-1024x683.jpg","title":"image","alt":"image"},{"image":"/images/post3-1024x683.jpg","title":"image","alt":"image"},{"image":"/images/post4-1024x683.jpg","title":"image","alt":"image"},{"image":"/images/post1-1024x683.jpg","title":"image","alt":"image"},{"image":"/images/post6-1024x683.jpg","title":"image","alt":"image"}],"copy":"© 2025 PIXAVIA developed by <a href=\'https://www.instagram.com/shubhxm_3121/\' target=\'blank\' class=\'onovo-lnk lnk--white\'>Shubham Vishwakarma</a>. All rights reserved."},"social":[{"link":"https://www.behance.net/pixaviastudio","icon":"fab fa-behance","title":"Behance"},{"link":"https://youtube.com/@pixaviadesignstudio?si=Jhy9JIqCU8zVLxaP","icon":"fab fa-youtube","title":"Youtube"},{"link":"https://www.instagram.com/pixavia._?igsh=MTltaXhwaDFxbjJ2cA==","icon":"fab fa-instagram","title":"Twitter"},{"link":"https://www.linkedin.com/in/pixavia-studio-a26015346?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app","icon":"fab fa-linkedin","title":"Linkedin"}]}');
 
 /***/ })
 
@@ -149,7 +160,7 @@ module.exports = JSON.parse('{"settings":{"siteName":"PIXAVIA","preloader":true,
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next"], () => (__webpack_exec__("./node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js?kind=PAGES&page=%2F_error&preferredRegion=&absolutePagePath=private-next-pages%2F_error&absoluteAppPath=private-next-pages%2F_app&absoluteDocumentPath=private-next-pages%2F_document&middlewareConfigBase64=e30%3D!")));
+var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/@swc"], () => (__webpack_exec__("./node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js?kind=PAGES&page=%2F_error&preferredRegion=&absolutePagePath=private-next-pages%2F_error&absoluteAppPath=private-next-pages%2F_app&absoluteDocumentPath=private-next-pages%2F_document&middlewareConfigBase64=e30%3D!")));
 module.exports = __webpack_exports__;
 
 })();
