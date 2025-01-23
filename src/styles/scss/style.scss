@@ -13,6 +13,62 @@ Version: 1.0
 	1. Global
 ---*/
 
+.logo {
+	display: none;
+	visibility: hidden;
+  }
+
+
+.custom-modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: white;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+	z-index: 1000;
+  }
+  
+  .custom-modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 999;
+  }
+  
+  .close-btn {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+	background-color: #ff4d4d;
+	color: white;
+	border: none;
+	border-radius: 50%;
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	z-index: 10000;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+	transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+  
+  .close-btn:hover {
+	transform: scale(1.1);
+	background-color: #ff1a1a;
+  }
+  
+  
+  
+  
 .desi-girl{
 	padding-left: 40px;
 	padding-right: 40px;

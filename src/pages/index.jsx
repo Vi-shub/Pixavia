@@ -17,6 +17,7 @@ import VideoSection from "@components/sections/Video";
 import CallToActionSection from "@components/sections/CallToAction";
 import ProjectData from "../components/sections/ProjectData";
 import HistorySlider from "../components/sliders/History";
+import Particle from "../components/sections/Particle";
 
 const HeroSection = dynamic(() => import("@components/sections/Hero"), {
   ssr: false,
@@ -33,6 +34,7 @@ const Home1 = (props) => {
   return (
     <Layouts>
       <>
+      {/* <Particle/> */}
         <HeroSection />
         <HistorySlider />
         <ProjectData />

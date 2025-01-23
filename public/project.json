@@ -1,78 +1,93 @@
 [
-    {
-      "title": "Museums Art Concept",
-      "image": "/images/project-n01-3-1200x900.jpg",
-      "category": "Branding",
-      "category_slug": "branding",
-      "type": "Art Direction, Branding, Interactive Design",
-      "team": "Thomas Jackki",
-      "date": "2021-2023"
-    },
-    {
-      "title": "Market Economy Graphics",
-      "image": "/images/project-2-2-1200x982.jpg",
-      "category": "Marketing",
-      "category_slug": "marketing",
-      "type": "UI/UX Design, Mobile Apps, Interactive Design",
-      "team": "Alexander Bravo",
-      "date": "2021-2023"
-    },
-    {
-      "title": "Headphones 3D Rendering",
-      "image": "/images/project-2-1200x988.jpg",
-      "category": "Design",
-      "category_slug": "design",
-      "type": "UI/UX Design, Branding, Logo Design",
-      "team": "Steven Morrison",
-      "date": "2021-2023"
-    },
-    {
-      "title": "Business Card Logo",
-      "image": "/images/project-4.jpg",
-      "category": "Design",
-      "category_slug": "design",
-      "type": "Marketing, Rendering, 3D Design",
-      "team": "Lina Watson",
-      "date": "2021-2023"
-    },
-    {
-      "title": "Flower Store Mobile App",
-      "image": "/images/project-3-1200x750.jpg",
-      "category": "Interactive",
-      "category_slug": "interactive",
-      "type": "Marketing, Rendering, 3D Design",
-      "team": "Lina Watson",
-      "date": "2022-2023"
-    },
-    {
-      "title": "Circle Cardboard Concept",
-      "image": "/images/project-1-1080x800.jpg",
-      "short": "A modern, technology-enabled, wellness-focused workspace and sustainable office…",
-      "category": "Branding",
-      "category_slug": "branding",
-      "type": "Illustration, Branding, Poster Design",
-      "team": "Lina Watson",
-      "date": "2022-2023"
-    },
-    {
-      "title": "Daily Weather Mobile App",
-      "image": "/images/project-8-1080x800.jpg",
-      "short": "A modern, technology-enabled, wellness-focused workspace and sustainable office…",
-      "category": "Interactive",
-      "category_slug": "interactive",
-      "type": "Art Direction, Branding, Interactive Design",
-      "team": "Thomas Jackki",
-      "date": "2021-2023"
-    },
-    {
-      "title": "Colorful Ice Cream Ornament",
-      "image": "/images/project-5-1080x800.jpg",
-      "short": "A modern, technology-enabled, wellness-focused workspace and sustainable office…",
-      "category": "Marketing",
-      "category_slug": "marketing",
-      "type": "Art Direction, Branding, Interactive Design",
-      "team": "Thomas Jackki",
-      "date": "2021-2023"
-    }
+  {
+    "title": "Museums Art Concept",
+    "type": "image",
+    "content": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/NGC_4414_%28NASA-med%29.jpg/1089px-NGC_4414_%28NASA-med%29.jpg",
+    "category": "Branding",
+    "category_slug": "branding",
+    "team": "Thomas Jackki",
+    "date": "2021-2023"
+  },
+  {
+    "title": "Sample Motion Video",
+    "type": "video",
+    "content": "https://www.sample-videos.com/video321/mp4/720/big_buck_bunny_720p_5mb.mp4",
+    "category": "Motion Graphics",
+    "category_slug": "motion-graphics",
+    "team": "John Doe",
+    "date": "2022-2023"
+  },
+  {
+    "title": "Museums Art Concept",
+    "type": "image",
+    "content": "https://drive.google.com/file/d/1zdU_AJ53dxOrQ_pp7fZI7qSDGBvsTooi/view?usp=sharing",
+    "category": "Branding",
+    "category_slug": "branding",
+    "team": "Thomas Jackki",
+    "date": "2021-2023"
+  },
+  {
+    "title": "Sample Motion Video",
+    "type": "video",
+    "content": "https://www.example.com/sample-video.mp4",
+    "category": "Motion Graphics",
+    "category_slug": "motion-graphics",
+    "team": "John Doe",
+    "date": "2022-2023"
+  },
+  {
+    "title": "Museums Art Concept",
+    "type": "image",
+    "content": "https://drive.google.com/file/d/1zdU_AJ53dxOrQ_pp7fZI7qSDGBvsTooi/view?usp=sharing",
+    "category": "Branding",
+    "category_slug": "branding",
+    "team": "Thomas Jackki",
+    "date": "2021-2023"
+  },
+  {
+    "title": "Sample Motion Video",
+    "type": "video",
+    "content": "https://www.example.com/sample-video.mp4",
+    "category": "Motion Graphics",
+    "category_slug": "motion-graphics",
+    "team": "John Doe",
+    "date": "2022-2023"
+  },
+  {
+    "title": "Museums Art Concept",
+    "type": "image",
+    "content": "https://drive.google.com/file/d/1zdU_AJ53dxOrQ_pp7fZI7qSDGBvsTooi/view?usp=sharing",
+    "category": "Branding",
+    "category_slug": "branding",
+    "team": "Thomas Jackki",
+    "date": "2021-2023"
+  },
+  {
+    "title": "Sample Motion Video",
+    "type": "video",
+    "content": "https://www.example.com/sample-video.mp4",
+    "category": "Motion Graphics",
+    "category_slug": "motion-graphics",
+    "team": "John Doe",
+    "date": "2022-2023"
+  },
+  {
+    "title": "Museums Art Concept",
+    "type": "image",
+    "content": "https://drive.google.com/file/d/1zdU_AJ53dxOrQ_pp7fZI7qSDGBvsTooi/view?usp=sharing",
+    "category": "Branding",
+    "category_slug": "branding",
+    "team": "Thomas Jackki",
+    "date": "2021-2023"
+  },
+  {
+    "title": "Sample Motion Video",
+    "type": "video",
+    "content": "https://www.example.com/sample-video.mp4",
+    "category": "Motion Graphics",
+    "category_slug": "motion-graphics",
+    "team": "John Doe",
+    "date": "2022-2023"
+  }
 ]
   

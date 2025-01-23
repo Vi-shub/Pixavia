@@ -3,11 +3,27 @@ import Isotope from "isotope-layout";
 import { useEffect, useRef, useState } from "react";
 import appData from "@data/app.json";
 import ImageView from "@components/ImageView";
+import Modal from "react-modal";
 
 const ProjectsGrid = ({ projects, layout, cols, sideFilter, masonry, galleryMode }) => {
   // Isotope
   const isotope = useRef();
   const [filterKey, setFilterKey] = useState("*");
+  const [modalOpen, setModalOpen] = useState(false);
+const [modalContent, setModalContent] = useState(null);
+const [modalType, setModalType] = useState(null);
+
+const openModal = (type, content) => {
+  setModalType(type);
+  setModalContent(content);
+  setModalOpen(true);
+};
+const closeModal = () => {
+  setModalOpen(false);
+  setModalContent(null); // Clear content when closing
+  setModalType(null); // Clear type when closing
+};
+
 
   useEffect(() => {
     setTimeout(() => {
@@ -123,21 +139,44 @@ const ProjectsGrid = ({ projects, layout, cols, sideFilter, masonry, galleryMode
 
                     {/* Projects items */}
                     <div className="row onovo-portfolio-items">
+                    {modalOpen && (
+  <Modal
+    isOpen={modalOpen}
+    onRequestClose={closeModal}
+    className="custom-modal"
+    overlayClassName="custom-modal-overlay"
+    contentLabel="Project Modal"
+  >
+    {/* FAB Close Button */}
+    <button className="close-btn" onClick={closeModal}>
+      <i className="fas fa-times"></i> {/* Replace with your preferred icon */}
+    </button>
+    {/* Modal Content */}
+    {modalType === "image" && <img src={modalContent} alt="Project Content" />}
+    {modalType === "video" && (
+      <video controls width="100%">
+        <source src={modalContent} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    )}
+  </Modal>
+)}
 
                         {projects.map((item, key) => (
-                        <div key={`projects-item-${key}`} className={`${columns} onovo-portfolio-col ${item.category_slug}`}>
+                        <div key={`projects-item-${key}`} className={`${columns} onovo-portfolio-col ${item.category_slug}`}
+                        onClick={() => openModal(item.type, item.content)}>
                             {layout == "grid" &&    
                                 <div className="onovo-portfolio-item">
                                     <div className={masonry ? "image" : "image image-square"} data-onovo-overlay data-onovo-scroll>
-                                        <Link href={galleryMode ? item.image : `/projects/${item.id}`} className="onovo-hover-3">
-                                            <img src={item.image} alt={item.title} />
-                                        </Link>
+                                        
+                                        <img className="onovo-hover-3" src={item.type === "image" ? item.content : "/placeholder.jpg"} alt={item.title} />
+                                       
                                     </div>
                                     <div className="desc">
                                         <h5 className="title">
-                                            <Link className="onovo-lnk" href={galleryMode ? item.image : `/projects/${item.id}`}>
+                                           
                                                 <span data-splitting data-onovo-scroll>{item.title}</span>
-                                            </Link>
+                                           
                                         </h5>
                                         <div className="text">
                                             <div data-splitting data-onovo-scroll>
@@ -147,45 +186,10 @@ const ProjectsGrid = ({ projects, layout, cols, sideFilter, masonry, galleryMode
                                     </div>
                                 </div>
                             }
-                            {layout == "list" &&
-                                <div className="onovo-portfolio-item onovo-portfolio-item-list">
-                                    <div className="image" data-onovo-overlay data-onovo-scroll>
-                                        <Link href={`/projects/${item.id}`} className="onovo-hover-3">
-                                          <img src={item.image} alt={item.title} />
-                                        </Link>
-                                    </div>
-                                    <div className="desc">
-                                      <div className="text">
-                                        <div data-splitting data-onovo-scroll>
-                                          <span>{item.category}</span>
-                                        </div>
-                                      </div>
-                                      <h5 className="title">
-                                        <Link className="onovo-lnk" href={`/projects/${item.id}`}>
-                                          <span data-splitting data-onovo-scroll>{item.title}</span>
-                                        </Link>
-                                      </h5>
-                                      <div className="onovo-text">
-                                        <div>
-                                          <ul data-splitting="" data-onovo-scroll="">
-                                            <li key={`projects-list-item-${key}-attr-1`}>
-                                              <strong>Project Type</strong>
-                                              <br /> {item.type}
-                                            </li>
-                                            <li key={`projects-list-item-${key}-attr-2`}>
-                                              <strong>Team</strong>
-                                              <br /> {item.team}
-                                            </li>
-                                            <li key={`projects-list-item-${key}-attr-3`}>
-                                              <strong>Date</strong>
-                                              <br /> {item.date}
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                    </div>
-                                </div>
-                            }
+                            
+
+
+                            
                         </div>
                         ))}
 
