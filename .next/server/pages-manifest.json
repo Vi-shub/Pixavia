@@ -1,8 +1,1 @@
-{
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/particle": "pages/particle.js",
-  "/": "pages/index.js",
-  "/404": "pages/404.js"
-}
+{"/_app":"pages/_app.js","/_error":"pages/_error.js","/_document":"pages/_document.js","/404":"pages/404.html","/api/hello":"pages/api/hello.js","/faq":"pages/faq.html","/contact":"pages/contact.html","/particle":"pages/particle.html","/pricing":"pages/pricing.html","/terms":"pages/terms.html","/blog":"pages/blog.js","/blog/page/[page]":"pages/blog/page/[page].js","/about":"pages/about.js","/":"pages/index.js","/gallery":"pages/gallery.js","/projects-2":"pages/projects-2.js","/projects-3":"pages/projects-3.js","/projects-5":"pages/projects-5.js","/projects-4":"pages/projects-4.js","/blog-2":"pages/blog-2.js","/services":"pages/services.js","/blog/[id]":"pages/blog/[id].js","/projects":"pages/projects.js","/team":"pages/team.js","/projects/[id]":"pages/projects/[id].js","/team/[id]":"pages/team/[id].js","/services/[id]":"pages/services/[id].js"}

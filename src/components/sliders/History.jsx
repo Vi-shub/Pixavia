@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Data from "@data/sliders/history";
-
+import Image from "next/image";
 const HistorySlider = () => {
   return (
     <>
@@ -13,7 +13,7 @@ const HistorySlider = () => {
             <div className="onovo-history-item gap-bottom-40">
               <div
                 className="image">
-                  <img src="/images/intro1.jpg" alt="intro1" />
+                  <Image src="/images/intro1.jpg" alt="intro1" />
                 </div>
 
               <div className="desc">
@@ -23,7 +23,7 @@ const HistorySlider = () => {
                 
                 <div className="text">
                   <p>
-                  Pixavia, we are a cutting-edge design studio passionate about transforming ideas into visual masterpieces. Specializing in video editing, graphic design, branding, 3D modeling, and motion graphics, we bring creativity and precision to every project. Our team combines artistic innovation with a seamless workflow, ensuring that each piece resonates with quality, originality, and purpose. Whether it's crafting a brand identity or creating dynamic visuals, Pixavia is your partner in design excellence.  
+                  Pixavia, we are a cutting-edge design studio passionate about transforming ideas into visual masterpieces. Specializing in video editing, graphic design, branding, 3D modeling, and motion graphics, we bring creativity and precision to every project. Our team combines artistic innovation with a seamless workflow, ensuring that each piece resonates with quality, originality, and purpose. Whether it&apos;s crafting a brand identity or creating dynamic visuals, Pixavia is your partner in design excellence.  
 
                   </p>
                 </div>
@@ -44,7 +44,7 @@ const HistorySlider = () => {
               </div>
               <div
                 className="image">
-                <img src="/images/intro2.jpg" alt="intro2" />
+                <Image src="/images/intro2.jpg" alt="intro2" />
               
             </div>
             </div>

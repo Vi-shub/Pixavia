@@ -1,7 +1,7 @@
 import { PER_PAGE } from './blog/page/[page]'
 import Link from "next/link";
 import Date from '@library/date';
-
+import Image from 'next/image';
 import PageBanner from "@components/PageBanner";
 import Layouts from "@layouts/Layouts";
 
@@ -22,7 +22,7 @@ const Blog2 = ( { posts, totalPosts, currentPage } ) => {
 							<div className="onovo-blog-item archive-item" key={`post-${key}`}>
 								<div className="image" data-onovo-overlay data-onovo-scroll>
 									<a href={`/blog/${item.id}`}>
-										<img src={item.image} alt={item.title} />
+										<Image src={item.image} alt={item.title} />
 									</a>
 								</div>
 								<div className="desc">
@@ -75,21 +75,21 @@ const Blog2 = ( { posts, totalPosts, currentPage } ) => {
 										<ul className="wp-block-latest-posts__list wp-block-latest-posts">
 											<li>
 												<div className="wp-block-latest-posts__featured-image">
-													<img src="/images/posts3-150x150.jpg" alt="image" />
+													<Image src="/images/posts3-150x150.jpg" alt="image" />
 												</div>
 												<Link className="wp-block-latest-posts__post-title" href="/blog/play-to-your-strength-and-supercharge-your-business">Usability Secrets to Create Interfaces</Link>
 												<span className="wp-block-latest-posts__post-date">March 25, 2023</span>
 											</li>
 											<li>
 												<div className="wp-block-latest-posts__featured-image">
-													<img src="/images/post1-150x150.jpg" alt="image" />
+													<Image src="/images/post1-150x150.jpg" alt="image" />
 												</div>
 												<Link className="wp-block-latest-posts__post-title" href="/blog/play-to-your-strength-and-supercharge-your-business">The Main Thing For The Web Designer</Link>
 												<span className="wp-block-latest-posts__post-date">March 18, 2023</span>
 											</li>
 											<li>
 												<div className="wp-block-latest-posts__featured-image">
-													<img src="/images/post4-150x150.jpg" alt="image" />
+													<Image src="/images/post4-150x150.jpg" alt="image" />
 												</div>
 												<Link className="wp-block-latest-posts__post-title" href="/blog/play-to-your-strength-and-supercharge-your-business">How to Do Your First Business Project</Link>
 												<span className="wp-block-latest-posts__post-date">March 10, 2023</span>

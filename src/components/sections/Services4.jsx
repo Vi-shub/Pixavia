@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Data from "@data/sections/services-4.json";
 import { servShowcaseHover } from "@common/utilits";
-
+import Image from "next/image";
 const Services4Section = ({ services }) => {
   return (
     <>
@@ -27,7 +27,7 @@ const Services4Section = ({ services }) => {
 						<div className="onovo-service-item-list-inner">
 							<div className="image onovo-hover-1">
 								<a href={`/services/${item.id}`}>
-									<img src={item.icon} alt={item.title} />
+									<Image src={item.icon} alt={item.title} />
 								</a>
 							</div>
 							<div className="num">

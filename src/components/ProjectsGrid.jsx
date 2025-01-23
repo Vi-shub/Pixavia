@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import appData from "@data/app.json";
 import ImageView from "@components/ImageView";
 import Modal from "react-modal";
-
+import Image from "next/image";
 const ProjectsGrid = ({ projects, layout, cols, sideFilter, masonry, galleryMode }) => {
   // Isotope
   const isotope = useRef();
@@ -152,7 +152,7 @@ const closeModal = () => {
       <i className="fas fa-times"></i> {/* Replace with your preferred icon */}
     </button>
     {/* Modal Content */}
-    {modalType === "image" && <img src={modalContent} alt="Project Content" />}
+    {modalType === "image" && <Image src={modalContent} alt="Project Content" />}
     {modalType === "video" && (
       <video controls width="100%">
         <source src={modalContent} type="video/mp4" />
@@ -169,7 +169,7 @@ const closeModal = () => {
                                 <div className="onovo-portfolio-item">
                                     <div className={masonry ? "image" : "image image-square"} data-onovo-overlay data-onovo-scroll>
                                         
-                                        <img className="onovo-hover-3" src={item.type === "image" ? item.content : "/placeholder.jpg"} alt={item.title} />
+                                        <Image className="onovo-hover-3" src={item.type === "image" ? item.content : "/placeholder.jpg"} alt={item.title} />
                                        
                                     </div>
                                     <div className="desc">

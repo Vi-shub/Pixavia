@@ -2,7 +2,7 @@ import appData from "@data/app.json";
 import { Formik } from "formik";
 import { useState } from "react";
 import { useRouter } from "next/router";
-
+import Image from "next/image";
 const Contact = () => {
   const [showPopup, setShowPopup] = useState(false);
   const router = useRouter();
@@ -221,7 +221,7 @@ const Contact = () => {
                     </div>
                   </li>
                   <li className="align-center">
-                    <img
+                    <Image
                       src="/images/form-bg.png"
                       alt="Houston Office"
                       style={{

@@ -1,6 +1,6 @@
 import Data from "@data/sections/team.json";
 import Link from "next/link";
-
+import Image from "next/image";
 const TeamSection = ({ team }) => {
   return (
     <>
@@ -46,7 +46,7 @@ const TeamSection = ({ team }) => {
                     </div>
                     <div className="image">
                       <Link href={`/team/${item.id}`}>
-                        <img
+                        <Image
                           decoding="async"
                           src={item.image}
                           width="350"

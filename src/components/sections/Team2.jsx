@@ -1,6 +1,6 @@
 import Data from "@data/sections/team2.json";
 import Link from "next/link";
-
+import Image from "next/image";
 const Team2Section = ( { team } ) => {
     return (
         <>
@@ -33,7 +33,7 @@ const Team2Section = ( { team } ) => {
 								<div className="onovo-team-two-item">
 									<div className="image onovo-hover-3 onovo-hover-black-30" data-onovo-overlay data-onovo-scroll>
 										<a href={`/team/${item.id}`}>
-											<img src={item.image} alt={item.name} />
+											<Image src={item.image} alt={item.name} />
 										</a>
 										<div className="onovo-social-2">
 											<ul>

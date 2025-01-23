@@ -3,7 +3,7 @@ import appData from "@data/app.json";
 import { useEffect } from "react";
 import ImageView from "@components/ImageView";
 import { footerSticky } from "@common/utilits";
-
+import Image from "next/image";
 const Footer2 = () => {
   useEffect(() => {
     footerSticky();
@@ -36,7 +36,7 @@ const Footer2 = () => {
 							{/* Logo */}
 							<div className="onovo-f-logo gap-bottom-40" style={{"maxWidth": "70px"}}>
 								<Link href="/">
-									<img src={appData.footer.logo.image} alt={appData.footer.logo.alt} />
+									<Image src={appData.footer.logo.image} alt={appData.footer.logo.alt} />
 								</Link>
 							</div>
 

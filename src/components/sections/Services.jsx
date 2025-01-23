@@ -1,7 +1,7 @@
 import Data from "@data/sections/services.json";
 import Link from "next/link";
 import { useEffect } from "react";
-
+import Image from "next/image";
 import { servicesHover } from "@common/utilits";
 
 const ServicesSection = () => {
@@ -22,7 +22,7 @@ const ServicesSection = () => {
                         <div className={key == 1 ? "onovo-service-grid-item onovo-hover-1 active active--default" : "onovo-service-grid-item onovo-hover-1"}>
                             <div className="image">
                                 <Link href={item.link}>
-                                    <img decoding="async" src={item.image} alt={item.title} />
+                                    <Image decoding="async" src={item.image} alt={item.title} />
                                 </Link>
                             </div>
                             <h5 className="onovo-title-3">

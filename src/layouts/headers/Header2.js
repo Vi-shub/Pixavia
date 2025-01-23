@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import appData from "@data/app.json";
 import { headerSticky } from "@common/utilits";
-
+import Image from "next/image";
 const Header2 = ({ darkHeader, cartButton }) => {
 	const navItems = [];
 
@@ -76,8 +76,8 @@ const Header2 = ({ darkHeader, cartButton }) => {
 							{/* Logo */}
 							<div className="onovo-logo-image" style={{"maxWidth": "70px"}}>
 								<Link href="/">
-									<img src={appData.header.logo.image} alt={appData.header.logo.alt} />
-                    				<img className="logo--white" src={appData.header.logo.image_white} alt={appData.header.logo.alt} />
+									<Image src={appData.header.logo.image} alt={appData.header.logo.alt} />
+                    				<Image className="logo--white" src={appData.header.logo.image_white} alt={appData.header.logo.alt} />
 								</Link>
 							</div>
 

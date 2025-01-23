@@ -4,7 +4,7 @@ import Accordion from 'react-bootstrap/Accordion';
 import Link from "next/link";
 import appData from "@data/app.json";
 import { Formik } from 'formik';
-
+import Image from "next/image";
 import { getAllServicesIds, getServiceData, getSortedServicesData } from "@library/services";
 
 const ServiceDetail = ( { postData, services } ) => {
@@ -38,7 +38,7 @@ const ServiceDetail = ( { postData, services } ) => {
 
 					{/* Image */}
 					<div className="gap-bottom-50">
-						<img src={postData.image} alt={postData.title} />
+						<Image src={postData.image} alt={postData.title} />
 					</div>
 
 					{postData.contentHtml != "" &&

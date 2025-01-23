@@ -3,7 +3,7 @@ import Date from '@library/date';
 import Link from "next/link";
 import { sliderProps } from "@common/sliderProps";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import Image from "next/image";
 const LatestPostsSlider = ( { posts } ) => {
     return (
         <>
@@ -32,7 +32,7 @@ const LatestPostsSlider = ( { posts } ) => {
                                 <div className="onovo-blog-slide-item">
                                     <div className="image" data-onovo-overlay data-onovo-scroll>
                                         <Link href={`/blog/${item.id}`}>
-                                            <img src={item.image} alt={item.title} />
+                                            <Image src={item.image} alt={item.title} />
                                         </Link>
                                     </div>
                                     <div className="desc">

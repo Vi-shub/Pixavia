@@ -2,7 +2,7 @@ import Layouts from "@layouts/Layouts";
 import PageBanner from "@components/PageBanner";
 import Link from "next/link";
 import ImageView from "@components/ImageView";
-
+import Image from "next/image";
 import { useRouter } from 'next/router';
 
 import { getSortedProjectsData, getAllProjectsIds, getProjectData } from "@library/projects";
@@ -55,7 +55,7 @@ const ProjectDetail = ( props ) => {
 					{/* Image */}
 					<div className="gap-bottom-80">
             <div className="project-image">
-						  <img src={postData.image} alt={postData.title} />
+						  <Image src={postData.image} alt={postData.title} />
             </div>
 					</div>
 
@@ -163,7 +163,7 @@ const ProjectDetail = ( props ) => {
 						<div key={`gallery-item-${key}`} className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<div className="gallery-item">
 								<a href={item.image} className="mfp-image">
-									<img src={item.image} alt={item.alt} />
+									<Image src={item.image} alt={item.alt} />
 								</a>
 							</div>
 						</div>

@@ -1,5 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
-
+import Link from "next/link";
 class MyDocument extends Document {
   render() {
     return (
@@ -67,10 +67,10 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
           {/* Contact Us Button */}
-          <a href="/contact" className="contact-us-button" title="Contact Us">
+          <Link href="/contact" className="contact-us-button" title="Contact Us">
           <i className="fas fa-user"></i>
 
-          </a>
+          </Link>
         </body>
       </Html>
     );

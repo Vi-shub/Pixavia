@@ -23,7 +23,7 @@ const Terms = () => {
 
           <h3>1. Introduction</h3>
           <p>
-            Pixavia Studios ("we," "us," or "our") operates the website xxx.com and provides visual content creation services. This
+            Pixavia Studios (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) operates the website xxx.com and provides visual content creation services. This
             Privacy Policy applies to all clients and users of Pixavia Studios.
           </p>
 

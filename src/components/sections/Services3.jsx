@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import Data from "@data/sections/services-3.json";
 import { servShowcaseHover } from "@common/utilits";
-
+import Image from "next/image";
 const Services3Section = ({ services }) => {
   useEffect(() => {
     servShowcaseHover();
@@ -32,7 +32,7 @@ const Services3Section = ({ services }) => {
                     <div className="col-xs-12 col-sm-12 col-md-12 col-lg-3 offset-lg-1 hide-on-mobile">
 
                         {/* Image */}
-                        <img src={Data.image.url} alt={Data.image.alt} />
+                        <Image src={Data.image.url} alt={Data.image.alt} />
 
                     </div>
                 </div>

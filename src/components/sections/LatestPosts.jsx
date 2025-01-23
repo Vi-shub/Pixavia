@@ -1,7 +1,7 @@
 import Data from "@data/sections/latest-posts.json";
 import Date from '@library/date';
 import Link from "next/link";
-
+import Image from "next/image";
 const LatestPostsSection = ( { posts } ) => {
     return (
         <>
@@ -26,7 +26,7 @@ const LatestPostsSection = ( { posts } ) => {
 							<div className="onovo-blog-item">
 								<div className="image" data-onovo-overlay data-onovo-scroll>
 									<Link href={`/blog/${item.id}`}>
-										<img decoding="async" src={item.image} width="400" height="240" alt={item.title} />
+										<Image decoding="async" src={item.image} width="400" height="240" alt={item.title} />
 									</Link>
 								</div>
 								<div className="desc">

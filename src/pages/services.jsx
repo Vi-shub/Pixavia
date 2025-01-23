@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import Image from 'next/image';
 import PageBanner from "@components/PageBanner";
 import Layouts from "@layouts/Layouts";
 import Link from "next/link";
@@ -34,7 +34,7 @@ const Services = (props) => {
 					<span>What we do</span>
 				</div>
 				<h2 className="onovo-title-2">
-					<span>We’re a full-service agency</span>
+					<span>We&apos;re a full-service agency</span>
 				</h2>
 			</div>
 
@@ -45,7 +45,7 @@ const Services = (props) => {
 					<div className="onovo-service-item-list-inner">
 						<div className="image onovo-hover-1">
 							<Link href={`/services/${item.id}`}>
-								<img src={item.icon} alt={item.title} />
+								<Image src={item.icon} alt={item.title} />
 							</Link>
 						</div>
 						<div className="num">

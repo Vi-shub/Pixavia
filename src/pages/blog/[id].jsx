@@ -1,6 +1,6 @@
 import Layouts from "@layouts/Layouts";
 import Link from "next/link";
-
+import Image from "next/image";
 import { getAllPostsIds, getPostData, getSortedPostsData } from "@library/posts";
 import Date from '@library/date';
 import ImageView from "@components/ImageView";
@@ -56,7 +56,7 @@ const PostsDetail = ( props ) => {
 
 					{/* Image */}
 					<div className="onovo-post-pic" data-onovo-overlay data-onovo-scroll>
-						<img src={postData.image} alt={postData.title} />
+						<Image src={postData.image} alt={postData.title} />
 					</div>
 
 					{/* Post*/}
@@ -80,7 +80,7 @@ const PostsDetail = ( props ) => {
                           {postData.gallery.items.map((item, key) => (
                           <div key={`gallery-item-${key}`} className={ postData.gallery.cols == 3 ? "col-xs-12 col-sm-12 col-md-6 col-lg-4" : "col-xs-12 col-sm-12 col-md-6 col-lg-6"}>
                               <a className="mfp-image" href={item.image}>
-                                <img src={item.image} alt={item.alt} />
+                                <Image src={item.image} alt={item.alt} />
                               </a>
                           </div>
                           ))}
@@ -220,7 +220,7 @@ const PostsDetail = ( props ) => {
 								<li className="comment comment-item">
 									<div className="comment">
 										<div className="comment-item__photo">
-											<img src="https://secure.gravatar.com/avatar/7255da11246c78e93500291c48c8f7a4?s=64&#038;d=mm&#038;r=g" className="avatar photo" height="64" width="64" alt="" />
+											<Image src="https://secure.gravatar.com/avatar/7255da11246c78e93500291c48c8f7a4?s=64&#038;d=mm&#038;r=g" className="avatar photo" height="64" width="64" alt="" />
 										</div>
 										<div className="comment-item__content">
 											<div className="comment-item__top">
@@ -241,7 +241,7 @@ const PostsDetail = ( props ) => {
 								<li className="comment comment-item">
 									<div className="comment">
 										<div className="comment-item__photo">
-											<img src="https://secure.gravatar.com/avatar/7255da11246c78e93500291c48c8f7a4?s=64&#038;d=mm&#038;r=g" className="avatar photo" height="64" width="64" alt="" />
+											<Image src="https://secure.gravatar.com/avatar/7255da11246c78e93500291c48c8f7a4?s=64&#038;d=mm&#038;r=g" className="avatar photo" height="64" width="64" alt="" />
 										</div>
 										<div className="comment-item__content">
 											<div className="comment-item__top">

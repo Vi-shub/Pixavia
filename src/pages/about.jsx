@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import dynamic from "next/dynamic";
 import Layouts from "@layouts/Layouts";
-
+import Image from "next/image";
 import { getSortedTeamData } from "@library/team";
 import { getSortedServicesData } from "@library/services";
 
@@ -57,7 +57,7 @@ const About = (props) => {
 					<div className="col-xs-12 col-sm-12 col-md-12 col-lg-3 offset-lg-1 hide-on-mobile">
 
 						{/* Image */}
-						<img src="/images/onovo-about-logo.png" alt="" />
+						<Image src="/images/onovo-about-logo.png" alt="" />
 
 					</div>
 				</div>
@@ -134,12 +134,12 @@ const About = (props) => {
 				<div className="row gap-top-100">
 					<div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 						<a href="/images/posts1.jpg" className="mfp-image">
-							<img src="/images/posts1-1024x683.jpg" alt="" />
+							<Image src="/images/posts1-1024x683.jpg" alt="" />
 						</a>
 					</div>
 					<div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 gap-top-60">
 						<a href="/images/posts2.jpg" className="mfp-image">
-							<img src="/images/posts2-1024x683.jpg" alt="" />
+							<Image src="/images/posts2-1024x683.jpg" alt="" />
 						</a>
 					</div>
 				</div>

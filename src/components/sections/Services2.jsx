@@ -1,6 +1,6 @@
 import Data from "@data/sections/services-2.json";
 import Link from "next/link";
-
+import Image from "next/image";
 const Services2Section = ( { introHidden, noPaddingBottom } ) => {
   return (
     <>
@@ -24,7 +24,7 @@ const Services2Section = ( { introHidden, noPaddingBottom } ) => {
                             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6 offset-lg-3 align-center">
                                 <div className="onovo-text">
                                     <p dangerouslySetInnerHTML={{__html: Data.text}} />
-                                    <p><img src={Data.signature.image} alt={Data.signature.alt} /></p>
+                                    <p><Image src={Data.signature.image} alt={Data.signature.alt} /></p>
                                 </div>
                             </div>
                         </div>
@@ -38,7 +38,7 @@ const Services2Section = ( { introHidden, noPaddingBottom } ) => {
                         <div className="onovo-service-item">
                             <div className="image">
                                 <Link href={item.link}>
-                                    <img src={item.icon} alt={item.title} />
+                                    <Image src={item.icon} alt={item.title} />
                                 </Link>
                             </div>
                             <div className="onovo-service-item-inner onovo-hover-3 onovo-hover-black">

@@ -3,7 +3,7 @@ import Link from "next/link";
 import Isotope from "isotope-layout";
 import { useEffect, useRef, useState } from "react";
 import appData from "@data/app.json";
-
+import Image from "next/image";
 const ProjectsSection = ( { projects } ) => {
     const categories = appData.settings.portfolio.categories;
 
@@ -134,7 +134,7 @@ const ProjectsSection = ( { projects } ) => {
 										<div className="onovo-portfolio-item">
 											<div className="image" data-onovo-overlay data-onovo-scroll>
 												<a href={`/projects/${item.id}`} className="onovo-hover-3">
-													<img src={item.image} alt={item.title} />
+													<Image src={item.image} alt={item.title} />
 												</a>
 											</div>
 											<div className="desc">

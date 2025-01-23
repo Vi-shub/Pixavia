@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Date from '@library/date';
-
+import Image from "next/image";
 const PaginationPage = ({ items }) => {
     return (
       <>
@@ -9,7 +9,7 @@ const PaginationPage = ({ items }) => {
             <div className="onovo-blog-item">
                 <div className="image" data-onovo-overlay data-onovo-scroll>
                     <Link href={`/blog/${item.id}`}>
-                        <img src={item.image} alt={item.title} />
+                        <Image src={item.image} alt={item.title} />
                     </Link>
                 </div>
                 <div className="desc">

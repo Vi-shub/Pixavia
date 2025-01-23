@@ -32,29 +32,29 @@ const DefaultFooter = () => {
                     style={{ fontSize: "1.6rem", margin: 0 }}
                   >
                     <li>
-                      <a href="#hero" className="onovo-lnk lnk--white">
+                      <Link href="#hero" className="onovo-lnk lnk--white">
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#about" className="onovo-lnk lnk--white">
+                      <Link href="#about" className="onovo-lnk lnk--white">
                         About Us
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#project" className="onovo-lnk lnk--white">
+                      <Link href="#project" className="onovo-lnk lnk--white">
                         Projects
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/contact" className="onovo-lnk lnk--white">
+                      <Link href="/contact" className="onovo-lnk lnk--white">
                         Contact Us
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="/terms" className="onovo-lnk lnk--white">
+                      <Link href="/terms" className="onovo-lnk lnk--white">
                         Terms of Services
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -67,14 +67,14 @@ const DefaultFooter = () => {
                     <ul>
                       {appData.social.map((item, key) => (
                         <li key={`fsocial-item-${key}`}>
-                          <a
+                          <Link
                             className="onovo-social-link onovo-hover-2"
                             href={item.link}
                             title={item.title}
                             target="_blank"
                           >
                             <i className={item.icon}></i>
-                          </a>
+                          </Link>
                         </li>
                       ))}
                     </ul>

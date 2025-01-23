@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@splinetool/react-spline": "^4.0.0",
+    "@splinetool/react-spline": "^3.0.0",
     "@splinetool/runtime": "^1.9.59",
     "date-fns": "^2.30.0",
     "formik": "^2.4.2",
@@ -30,5 +30,9 @@
     "splitting": "^1.0.6",
     "swiper": "10.0.4",
     "three": "^0.171.0"
+  },
+  "devDependencies": {
+    "eslint": "8.57.1",
+    "eslint-config-next": "15.1.6"
   }
 }
