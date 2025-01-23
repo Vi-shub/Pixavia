@@ -76,5 +76,11 @@
     "files": [
       "static/chunks/src_components_sliders_Ticker_jsx.js"
     ]
+  },
+  "particle.jsx -> @splinetool/react-spline": {
+    "id": "particle.jsx -> @splinetool/react-spline",
+    "files": [
+      "static/chunks/node_modules_splinetool_react-spline_dist_react-spline_js.js"
+    ]
   }
 }
