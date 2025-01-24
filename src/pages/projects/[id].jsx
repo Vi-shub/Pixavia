@@ -55,7 +55,7 @@ const ProjectDetail = ( props ) => {
 					{/* Image */}
 					<div className="gap-bottom-80">
             <div className="project-image">
-						  <Image src={postData.image} alt={postData.title} />
+						  <img src={postData.image} alt={postData.title} />
             </div>
 					</div>
 
@@ -163,7 +163,7 @@ const ProjectDetail = ( props ) => {
 						<div key={`gallery-item-${key}`} className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 							<div className="gallery-item">
 								<a href={item.image} className="mfp-image">
-									<Image src={item.image} alt={item.alt} />
+									<img src={item.image} alt={item.alt} />
 								</a>
 							</div>
 						</div>
@@ -216,7 +216,7 @@ const ProjectDetail = ( props ) => {
 				</div>
 			</section>
       
-      <ImageView />
+      <imgView />
 
     </Layouts>
   );

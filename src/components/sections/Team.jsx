@@ -46,7 +46,7 @@ const TeamSection = ({ team }) => {
                     </div>
                     <div className="image">
                       <Link href={`/team/${item.id}`}>
-                        <Image
+                        <img
                           decoding="async"
                           src={item.image}
                           width="350"

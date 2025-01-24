@@ -25,7 +25,7 @@ const Team = ( props ) => {
 							<div className="onovo-team-two-item">
 								<div className="image onovo-hover-3 onovo-hover-black-30" data-onovo-overlay data-onovo-scroll>
 									<Link href={`/team/${item.id}`}>
-										<Image src={item.image} alt={item.name} />
+										<img src={item.image} alt={item.name} />
 									</Link>
 									<div className="onovo-social-2">
 										<ul>

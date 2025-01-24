@@ -24,7 +24,7 @@ const Services2Section = ( { introHidden, noPaddingBottom } ) => {
                             <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6 offset-lg-3 align-center">
                                 <div className="onovo-text">
                                     <p dangerouslySetInnerHTML={{__html: Data.text}} />
-                                    <p><Image src={Data.signature.image} alt={Data.signature.alt} /></p>
+                                    <p><img src={Data.signature.image} alt={Data.signature.alt} /></p>
                                 </div>
                             </div>
                         </div>
@@ -38,7 +38,7 @@ const Services2Section = ( { introHidden, noPaddingBottom } ) => {
                         <div className="onovo-service-item">
                             <div className="image">
                                 <Link href={item.link}>
-                                    <Image src={item.icon} alt={item.title} />
+                                    <img src={item.icon} alt={item.title} />
                                 </Link>
                             </div>
                             <div className="onovo-service-item-inner onovo-hover-3 onovo-hover-black">

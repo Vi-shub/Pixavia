@@ -24,7 +24,7 @@ const PartnersSection = ( { paddingTop } ) => {
                         <div className="onovo-brands onovo-hover-3 onovo-hover-label" data-onovo-overlay data-onovo-scroll>
                             <a target="_blank" href={item.link}>
                                 <span className="image">
-                                    <Image decoding="async" src={item.image} width="285" height="200" alt={item.alt} />
+                                    <img decoding="async" src={item.image} width="285" height="200" alt={item.alt} />
                                 </span>
                                 <span className="label onovo-white-black">Visit Website</span>
                             </a>

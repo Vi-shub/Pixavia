@@ -99,7 +99,7 @@ const DefaultFooter = () => {
         </div>
       </footer>
 
-      <ImageView />
+      <imgView />
     </>
   );
 };

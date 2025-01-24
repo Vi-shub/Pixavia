@@ -26,7 +26,7 @@ const LatestPostsSection = ( { posts } ) => {
 							<div className="onovo-blog-item">
 								<div className="image" data-onovo-overlay data-onovo-scroll>
 									<Link href={`/blog/${item.id}`}>
-										<Image decoding="async" src={item.image} width="400" height="240" alt={item.title} />
+										<img decoding="async" src={item.image} width="400" height="240" alt={item.title} />
 									</Link>
 								</div>
 								<div className="desc">

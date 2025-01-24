@@ -9,7 +9,7 @@ const PaginationPage = ({ items }) => {
             <div className="onovo-blog-item">
                 <div className="image" data-onovo-overlay data-onovo-scroll>
                     <Link href={`/blog/${item.id}`}>
-                        <Image src={item.image} alt={item.title} />
+                        <img src={item.image} alt={item.title} />
                     </Link>
                 </div>
                 <div className="desc">

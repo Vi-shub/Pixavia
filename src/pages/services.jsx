@@ -45,7 +45,7 @@ const Services = (props) => {
 					<div className="onovo-service-item-list-inner">
 						<div className="image onovo-hover-1">
 							<Link href={`/services/${item.id}`}>
-								<Image src={item.icon} alt={item.title} />
+								<img src={item.icon} alt={item.title} />
 							</Link>
 						</div>
 						<div className="num">

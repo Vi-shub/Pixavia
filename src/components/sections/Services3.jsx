@@ -32,7 +32,7 @@ const Services3Section = ({ services }) => {
                     <div className="col-xs-12 col-sm-12 col-md-12 col-lg-3 offset-lg-1 hide-on-mobile">
 
                         {/* Image */}
-                        <Image src={Data.image.url} alt={Data.image.alt} />
+                        <img src={Data.image.url} alt={Data.image.alt} />
 
                     </div>
                 </div>

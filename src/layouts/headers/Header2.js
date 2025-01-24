@@ -76,8 +76,8 @@ const Header2 = ({ darkHeader, cartButton }) => {
 							{/* Logo */}
 							<div className="onovo-logo-image" style={{"maxWidth": "70px"}}>
 								<Link href="/">
-									<Image src={appData.header.logo.image} alt={appData.header.logo.alt} />
-                    				<Image className="logo--white" src={appData.header.logo.image_white} alt={appData.header.logo.alt} />
+									<img src={appData.header.logo.image} alt={appData.header.logo.alt} />
+                    				<img className="logo--white" src={appData.header.logo.image_white} alt={appData.header.logo.alt} />
 								</Link>
 							</div>
 

@@ -221,7 +221,7 @@ const Contact = () => {
                     </div>
                   </li>
                   <li className="align-center">
-                    <Image
+                    <img
                       src="/images/form-bg.png"
                       alt="Houston Office"
                       style={{

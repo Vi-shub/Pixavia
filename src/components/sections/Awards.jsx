@@ -19,7 +19,7 @@ const AwardsSection = () => {
 
                     {Data.items.map((item, key) => (
 					<div key={`awards-item-${key}`} className="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-						<p><Image src={item.image} alt={item.alt} /></p>
+						<p><img src={item.image} alt={item.alt} /></p>
 						<h5 className="onovo-title-1">{item.value}</h5>
 						<span dangerouslySetInnerHTML={{__html : item.label}} />
 					</div>

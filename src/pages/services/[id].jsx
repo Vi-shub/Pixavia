@@ -38,7 +38,7 @@ const ServiceDetail = ( { postData, services } ) => {
 
 					{/* Image */}
 					<div className="gap-bottom-50">
-						<Image src={postData.image} alt={postData.title} />
+						<img src={postData.image} alt={postData.title} />
 					</div>
 
 					{postData.contentHtml != "" &&

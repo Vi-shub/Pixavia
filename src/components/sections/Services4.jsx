@@ -27,7 +27,7 @@ const Services4Section = ({ services }) => {
 						<div className="onovo-service-item-list-inner">
 							<div className="image onovo-hover-1">
 								<a href={`/services/${item.id}`}>
-									<Image src={item.icon} alt={item.title} />
+									<img src={item.icon} alt={item.title} />
 								</a>
 							</div>
 							<div className="num">

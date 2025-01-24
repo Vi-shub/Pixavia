@@ -19,7 +19,7 @@ const TeamDetail = ( { postData, projects, services } ) => {
 				<div className="onovo-team-detail">
 					<div className="row gap-140 gap-top-60 gap-bottom-0">
 						<div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-							<Image loading="lazy" src={postData.image} className="team-detail-img" alt={postData.name} />
+							<img loading="lazy" src={postData.image} className="team-detail-img" alt={postData.name} />
 						</div>
 						<div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 align-self-center">
 							<h2>
@@ -92,7 +92,7 @@ const TeamDetail = ( { postData, projects, services } ) => {
 						<div className="onovo-service-item-list-inner">
 							<div className="image onovo-hover-1">
 								<Link href={`/services/${item.id}`}>
-									<Image src={item.icon} alt={item.title} />
+									<img src={item.icon} alt={item.title} />
 								</Link>
 							</div>
 							<div className="num">
@@ -134,7 +134,7 @@ const TeamDetail = ( { postData, projects, services } ) => {
 
 					{postData.awards.map((item, key) => (
 					<div key={`awards-item-${key}`} className="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-						<p><Image src={item.image} alt="image" /></p>
+						<p><img src={item.image} alt="image" /></p>
 						<h5 className="onovo-title-1">{item.value}</h5>
 						<span dangerouslySetInnerHTML={{__html : item.label}} />
 					</div>
@@ -167,7 +167,7 @@ const TeamDetail = ( { postData, projects, services } ) => {
 							<div className="onovo-portfolio-item">
 								<div className="image" data-onovo-overlay data-onovo-scroll>
 									<Link href={`/projects/${item.id}`} className="onovo-hover-3">
-										<Image src={item.image} alt={item.title} />
+										<img src={item.image} alt={item.title} />
 									</Link>
 								</div>
 								<div className="desc">

@@ -152,7 +152,7 @@ const closeModal = () => {
       <i className="fas fa-times"></i> {/* Replace with your preferred icon */}
     </button>
     {/* Modal Content */}
-    {modalType === "image" && <Image src={modalContent} alt="Project Content" />}
+    {modalType === "image" && <img src={modalContent} alt="Project Content" />}
     {modalType === "video" && (
       <video controls width="100%">
         <source src={modalContent} type="video/mp4" />
@@ -169,7 +169,7 @@ const closeModal = () => {
                                 <div className="onovo-portfolio-item">
                                     <div className={masonry ? "image" : "image image-square"} data-onovo-overlay data-onovo-scroll>
                                         
-                                        <Image className="onovo-hover-3" src={item.type === "image" ? item.content : "/placeholder.jpg"} alt={item.title} />
+                                        <img className="onovo-hover-3" src={item.type === "image" ? item.content : "/placeholder.jpg"} alt={item.title} />
                                        
                                     </div>
                                     <div className="desc">
@@ -202,7 +202,7 @@ const closeModal = () => {
         </div>
       </section>
 
-      <ImageView />
+      <imgView />
     </>
   );
 };

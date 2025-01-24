@@ -5,7 +5,7 @@ const Spline = dynamic(() => import('@splinetool/react-spline'), { ssr: false })
 
 export default function Particle() {
   return (
-    <main style={{ position: 'relative', width: '100%', height: '100%' }}>
+    <main style={{ position: 'absoute', width: '100%', height: '100%' }}>
       {/* Desktop view */}
       <Spline
         scene="https://prod.spline.design/naeIOddvbnVnRfK6/scene.splinecode"

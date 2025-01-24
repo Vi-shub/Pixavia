@@ -9,11 +9,11 @@ const HistorySlider = () => {
         <div className="container">
           
           {/* History Items */}
-          <div className="onovo-history-items">
+          <div className="">
             <div className="onovo-history-item gap-bottom-40">
               <div
                 className="image">
-                  <Image src="/images/intro1.jpg" alt="intro1" />
+                  <img src="/images/intro1.jpg" alt="intro1" />
                 </div>
 
               <div className="desc">
@@ -44,7 +44,7 @@ const HistorySlider = () => {
               </div>
               <div
                 className="image">
-                <Image src="/images/intro2.jpg" alt="intro2" />
+                <img src="/images/intro2.jpg" alt="intro2" />
               
             </div>
             </div>

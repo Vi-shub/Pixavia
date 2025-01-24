@@ -134,7 +134,7 @@ const ProjectsSection = ( { projects } ) => {
 										<div className="onovo-portfolio-item">
 											<div className="image" data-onovo-overlay data-onovo-scroll>
 												<a href={`/projects/${item.id}`} className="onovo-hover-3">
-													<Image src={item.image} alt={item.title} />
+													<img src={item.image} alt={item.title} />
 												</a>
 											</div>
 											<div className="desc">

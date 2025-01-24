@@ -74,77 +74,31 @@ const DefaultHeader = ({ darkHeader, cartButton }) => {
             <div className="">
               <div className="col-4 col-xs-4 col-sm-4 col-md-4 col-lg-3 align-self-center">
                 {/* Logo */}
-                <div className="onovo-logo-image" style={{ maxWidth: "60px" }}>
+                <div className="onovo-logo-image">
                   <Link href="/">
-                    <Image
+                    <img
                       src={appData.header.logo.image}
                       alt={appData.header.logo.alt}
                     />
-                    <Image
+                    <img
                       className="logo--white"
                       src={appData.header.logo.image_white}
                       alt={appData.header.logo.alt}
                     />
                   </Link>
                 </div>
-              </div>
-              {/* <div className="col-4 col-xs-4 col-sm-4 col-md-4 col-lg-6 align-self-center align-center"> */}
-                {/* Menu Hamburger */}
-                {/* <a
-                  href="#"
-                  className={
-                    desktopMenu
-                      ? "onovo-menu-btn btn--active"
-                      : "onovo-menu-btn"
+                <style jsx>{`
+                  .onovo-logo-image {
+                    max-width: 60px;
                   }
-                  onClick={(e) => clickedDesktopMenu(e)}
-                >
-                  <span />
-                </a>
 
-                <div className="onovo-menu-popup align-left">
-                  <div className="onovo-menu-overlay" />
-                  <div className="onovo-menu-overlay-after" />
-
-                  <div className="onovo-menu-container onovo--noscroll">
-                    <div className="container">
-                      <div className="onovo-menu">
-                        <ul className="onovo-menu-nav">
-                          {navItems.map((item, key) => (
-                            <li
-                              key={`header-nav-item-${key}`}
-                              className={item.classes}
-                            >
-                              <Link
-                                className="onovo-lnk lnk--active"
-                                href={item.link}
-                              >
-                                {item.label}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> */}
-              {/* <div className="col-4 col-xs-4 col-sm-4 col-md-4 col-lg-3 align-self-center align-right"> */}
-                {/* Button */}
-                {/* <Link
-                  className="onovo-head-btn onovo-hover-btn"
-                  href={appData.header.button.link}
-                >
-                  <span>
-                    <span className="onovo-lnk lnk--active ono">
-                      {appData.header.button.label}
-                    </span>
-                  </span>
-                  <i className="arrow">
-                    <span />
-                  </i>
-                </Link>
-              </div> */}
+                  @media (max-width: 767px) {
+                    .onovo-logo-image {
+                      max-width: 40px;
+                    }
+                  }
+                `}</style>
+              </div>
             </div>
           </div>
         </div>

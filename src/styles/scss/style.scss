@@ -12,6 +12,18 @@ Version: 1.0
 /* ---
 	1. Global
 ---*/
+@media (max-width: 767px) {
+	.row .custom-mrg{
+		margin-left: 5%;
+	}
+	.onovo-text .footer-links{
+		font-size:12px;
+	}
+	.row .custom-mrg .gap-top-140{
+		padding-top: 20px;
+	}
+	
+}
 
 .logo {
 	display: none;
@@ -3223,7 +3235,7 @@ ul.onovo-footer-menu li {
 
 @media (max-width: 767px) {
 	.onovo-footer .copyright {
-		font-size: 16px;
+		font-size: 10px;
 	}
 	.onovo-footer ul.onovo-footer-menu li {
 		font-size: 16px;
@@ -6555,11 +6567,16 @@ body .onovo-subscribe-form .submit-container {
 	.onovo-navs.js-history-navs .js-history-pagination .swiper-pagination-bullet span {
 		display: none;
 	}
+	.onovo-history-item {
+		flex-direction: column;
+	}
 	.onovo-history-item .image {
+		max-width: 100%;
 		height: 280px;
 	}
 	.onovo-history-item .subtitle {
-		font-size: 60px;
+		padding-top: 80px;
+		font-size: 50px;
 		line-height: 1.3;
 	}
 	.onovo-history-item .title {
