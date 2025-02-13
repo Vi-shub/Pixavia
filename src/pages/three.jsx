@@ -156,22 +156,24 @@ class Environment {
     this.camera.updateProjectionMatrix();
     this.renderer.setSize(width, height);
   
-    // Check if text size needs to be updated
-    let newTextSize = width < 768 ? 10 : 24;
+    // Dynamically adjust PIXAVIA text size for mobile screens
+    let newTextSize = width < 768 ? 10 : 24; // Mobile size: 12px, Desktop size: 24px
+  
     if (this.createParticles.data.textSize !== newTextSize) {
       this.createParticles.data.textSize = newTextSize;
   
-      // Remove old PIXAVIA text before resizing
+      // 🔥 REMOVE OLD PIXAVIA TEXT BEFORE CREATING NEW ONE
       if (this.createParticles.particles) {
         this.scene.remove(this.createParticles.particles);
         this.createParticles.particles.geometry.dispose();
         this.createParticles.particles.material.dispose();
-        this.createParticles.particles = null;
+        this.createParticles.particles = null; // Ensure it's removed
       }
   
-      this.createParticles.createText(); // Create new text with correct size
+      this.createParticles.createText(); // Generate text again with new size
     }
   }
+  
   
   
 }
@@ -196,11 +198,10 @@ class CreateParticles {
       amount: 1500,
       particleSize: 1,
       particleColor: 0xffffff,
-      textSize: window.innerWidth < 768 ? 10 : 24, // Set correct size from the start
+      textSize: 24,
       area: 250,
       ease: 0.05,
     };
-    
 
     this.setup();
     this.bindEvents();
@@ -224,7 +225,13 @@ class CreateParticles {
     document.addEventListener("mousedown", this.onMouseDown.bind(this));
     document.addEventListener("mousemove", this.onMouseMove.bind(this));
     document.addEventListener("mouseup", this.onMouseUp.bind(this));
+  
+    // Add touch event listeners
+    document.addEventListener("touchstart", this.onTouchStart.bind(this), { passive: false });
+    document.addEventListener("touchmove", this.onTouchMove.bind(this), { passive: false });
+    document.addEventListener("touchend", this.onTouchEnd.bind(this));
   }
+  
 
   onMouseDown() {
     this.mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
@@ -252,6 +259,52 @@ class CreateParticles {
     this.mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
     this.mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
   }
+  onTouchStart(event) {
+    if (event.touches.length > 0) {
+      const touch = event.touches[0];
+  
+      if (this.isTouchInsideCanvas(touch)) {
+        event.preventDefault(); // Only prevent scrolling inside the 3D canvas
+        this.updateMousePosition(touch);
+        this.buttom = true;
+        this.data.ease = 0.01;
+      }
+    }
+  }
+  
+  onTouchMove(event) {
+    if (event.touches.length > 0) {
+      const touch = event.touches[0];
+  
+      if (this.isTouchInsideCanvas(touch)) {
+        event.preventDefault(); // Prevent scrolling only when interacting with canvas
+        this.updateMousePosition(touch);
+      }
+    }
+  }
+  
+  onTouchEnd() {
+    this.buttom = false;
+    this.data.ease = 0.05;
+  }
+  
+  updateMousePosition(touch) {
+    this.mouse.x = (touch.clientX / window.innerWidth) * 2 - 1;
+    this.mouse.y = -(touch.clientY / window.innerHeight) * 2 + 1;
+  }
+  isTouchInsideCanvas(touch) {
+    const rect = this.renderer.domElement.getBoundingClientRect();
+    return (
+      touch.clientX >= rect.left &&
+      touch.clientX <= rect.right &&
+      touch.clientY >= rect.top &&
+      touch.clientY <= rect.bottom
+    );
+  }
+  
+  
+  
+  
 
   render(level) {
     const time = ((0.001 * performance.now()) % 12) / 12;
@@ -392,11 +445,11 @@ class CreateParticles {
 
   createText() {
 
-    // if (this.particles) {
-    //   this.scene.remove(this.particles);
-    //   this.particles.geometry.dispose();
-    //   this.particles.material.dispose();
-    // }
+    if (this.particles) {
+      this.scene.remove(this.particles);
+      this.particles.geometry.dispose();
+      this.particles.material.dispose();
+    }
     let thePoints = [];
 
     let shapes = this.font.generateShapes(this.data.text, this.data.textSize);
@@ -493,6 +546,8 @@ class CreateParticles {
   distance(x1, y1, x2, y2) {
     return Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2));
   }
+  
+  
 }
 
 export default ThreeJsLanding;
