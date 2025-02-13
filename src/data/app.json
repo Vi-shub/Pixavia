@@ -7,11 +7,11 @@
             "categories": [
                 {
                     "label": "Graphic designing",
-                    "slug": "Graphic designing"
+                    "slug": "graphic-designing"
                 },
                 {
                     "label": "3d/2d designing",
-                    "slug": "3d/2d designing"
+                    "slug": "3d/2d-designing"
                 },
                 {
                     "label": "Motion graphics",
@@ -19,7 +19,7 @@
                 },
                 {
                     "label": "Video editing",
-                    "slug": "Video editing"
+                    "slug": "video-editing"
                 }
             ]
         }

@@ -1,84 +1,136 @@
 [
   {
-    "title": "Museums Art Concept",
+    "title": "Sizzling Sunday",
     "type": "image",
-    "content": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/NGC_4414_%28NASA-med%29.jpg/1089px-NGC_4414_%28NASA-med%29.jpg",
-    "category": "Branding",
-    "category_slug": "branding",
+    "content": "https://i.postimg.cc/pX9LSkFY/2.png",
+    "category": "Graphic designing",
+    "category_slug": "graphic-designing",
     "team": "Thomas Jackki",
     "date": "2021-2023"
   },
   {
-    "title": "Sample Motion Video",
+    "title": "After Worr Party",
+    "type": "image",
+    "content": "https://i.postimg.cc/Dfj9tTrR/1.png",
+    "category": "Graphic designing",
+    "category_slug": "graphic-designing",
+    "team": "Thomas Jackki",
+    "date": "2021-2023"
+  },
+  {
+    "title": "Temptation Saturday",
+    "type": "image",
+    "content": "https://i.postimg.cc/NfWjvT8h/3.png",
+    "category": "Graphic designing",
+    "category_slug": "graphic-designing",
+    "team": "Thomas Jackki",
+    "date": "2021-2023"
+  },
+  {
+    "title": "Sunday Showdown",
+    "type": "image",
+    "content": "https://i.postimg.cc/NGdKS5PY/4.png",
+    "category": "Graphic designing",
+    "category_slug": "graphic-designing",
+    "team": "Thomas Jackki",
+    "date": "2021-2023"
+  },
+  {
+    "title": "Saturday Night Spirit",
+    "type": "image",
+    "content": "https://i.postimg.cc/pXymHRgj/5.png",
+    "category": "Graphic designing",
+    "category_slug": "graphic-designing",
+    "team": "Thomas Jackki",
+    "date": "2021-2023"
+  },
+  {
+    "title": "Xmas Party",
+    "type": "image",
+    "content": "https://i.postimg.cc/BvfbHDt5/8.png",
+    "category": "Graphic designing",
+    "category_slug": "graphic-designing",
+    "team": "Thomas Jackki",
+    "date": "2021-2023"
+  },
+  {
+    "title": "Dolphin Health Club",
+    "type": "image",
+    "content": "https://i.postimg.cc/fTFJW1Nr/gym01.png",
+    "category": "Graphic designing",
+    "category_slug": "graphic-designing",
+    "team": "Thomas Jackki",
+    "date": "2021-2023"
+  },
+  {
+    "title": "Cristmas Whal",
     "type": "video",
-    "content": "https://www.sample-videos.com/video321/mp4/720/big_buck_bunny_720p_5mb.mp4",
+    "content": "https://res.cloudinary.com/dvu8dxkdx/video/upload/v1739438823/cristmas_whal_fcuich.mp4",
+    "thumbnail": "https://i.postimg.cc/MGWrrPF9/qq.png",
     "category": "Motion Graphics",
     "category_slug": "motion-graphics",
     "team": "John Doe",
     "date": "2022-2023"
   },
   {
-    "title": "Museums Art Concept",
-    "type": "image",
-    "content": "https://drive.google.com/file/d/1zdU_AJ53dxOrQ_pp7fZI7qSDGBvsTooi/view?usp=sharing",
-    "category": "Branding",
-    "category_slug": "branding",
-    "team": "Thomas Jackki",
-    "date": "2021-2023"
-  },
-  {
-    "title": "Sample Motion Video",
+    "title": "Merry Chirstmas",
     "type": "video",
-    "content": "https://www.example.com/sample-video.mp4",
+    "content": "https://res.cloudinary.com/dvu8dxkdx/video/upload/v1739439729/cristmas_e0vqus.mp4",
+    "thumbnail": "https://i.postimg.cc/ZR0HGCzQ/m2.png",
     "category": "Motion Graphics",
     "category_slug": "motion-graphics",
     "team": "John Doe",
     "date": "2022-2023"
   },
   {
-    "title": "Museums Art Concept",
-    "type": "image",
-    "content": "https://drive.google.com/file/d/1zdU_AJ53dxOrQ_pp7fZI7qSDGBvsTooi/view?usp=sharing",
-    "category": "Branding",
-    "category_slug": "branding",
-    "team": "Thomas Jackki",
-    "date": "2021-2023"
-  },
-  {
-    "title": "Sample Motion Video",
+    "title": "Diwali",
     "type": "video",
-    "content": "https://www.example.com/sample-video.mp4",
+    "content": "https://res.cloudinary.com/dvu8dxkdx/video/upload/v1739439804/diwali_with_camera_animation_ydzs8z.mp4",
+    "thumbnail": "https://i.postimg.cc/h4ksYDyC/m4.png",
     "category": "Motion Graphics",
     "category_slug": "motion-graphics",
     "team": "John Doe",
     "date": "2022-2023"
   },
   {
-    "title": "Museums Art Concept",
-    "type": "image",
-    "content": "https://drive.google.com/file/d/1zdU_AJ53dxOrQ_pp7fZI7qSDGBvsTooi/view?usp=sharing",
-    "category": "Branding",
-    "category_slug": "branding",
-    "team": "Thomas Jackki",
-    "date": "2021-2023"
-  },
-  {
-    "title": "Sample Motion Video",
+    "title": "Detailing",
     "type": "video",
-    "content": "https://www.example.com/sample-video.mp4",
+    "content": "https://res.cloudinary.com/dvu8dxkdx/video/upload/v1739439752/detailing_ntptlu.mp4",
+    "thumbnail": "https://i.postimg.cc/rmbjMM8w/m3.png",
     "category": "Motion Graphics",
     "category_slug": "motion-graphics",
     "team": "John Doe",
     "date": "2022-2023"
   },
   {
-    "title": "Museums Art Concept",
-    "type": "image",
-    "content": "https://drive.google.com/file/d/1zdU_AJ53dxOrQ_pp7fZI7qSDGBvsTooi/view?usp=sharing",
-    "category": "Branding",
-    "category_slug": "branding",
-    "team": "Thomas Jackki",
-    "date": "2021-2023"
+    "title": "Holi",
+    "type": "video",
+    "content": "https://res.cloudinary.com/dvu8dxkdx/video/upload/v1739439769/Happy_Holi_siamp_final_e0xdci.mp4",
+    "thumbnail": "https://i.postimg.cc/mkHwrJDN/m6.png",
+    "category": "Motion Graphics",
+    "category_slug": "motion-graphics",
+    "team": "John Doe",
+    "date": "2022-2023"
+  },
+  {
+    "title": "Independence Day",
+    "type": "video",
+    "content": "https://res.cloudinary.com/dvu8dxkdx/video/upload/v1739439797/independence_day_otfpmq.mp4",
+    "thumbnail": "https://i.postimg.cc/YqQRK5Tt/m7.png",
+    "category": "Motion Graphics",
+    "category_slug": "motion-graphics",
+    "team": "John Doe",
+    "date": "2022-2023"
+  },
+  {
+    "title": "Ganesh Chaturthi",
+    "type": "video",
+    "content": "https://res.cloudinary.com/dvu8dxkdx/video/upload/v1739439806/Final_Ganesh_Chaturthi_video_Wahl_hxp26r.mp4",
+    "thumbnail": "https://i.postimg.cc/DfJ55JgJ/m5.png",
+    "category": "Motion Graphics",
+    "category_slug": "motion-graphics",
+    "team": "John Doe",
+    "date": "2022-2023"
   },
   {
     "title": "Sample Motion Video",
